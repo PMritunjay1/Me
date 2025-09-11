@@ -10,7 +10,7 @@ const Experience = () => {
       duration: "1st May 2025 - 31st Jul 2025",
       description: "Selected as SWE Co-Op Intern in the prestigious AlgoUniversity Tech Fellowship program, working on real-world software engineering projects and gaining industry experience.",
       icon: Briefcase,
-      certificate: "/certicate.jpg"
+      certificate: "/Me/certicate.jpg"
     },
     {
       title: "Class Representative",
