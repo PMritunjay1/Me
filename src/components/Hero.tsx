@@ -40,7 +40,7 @@ const Hero = () => {
           </h1>
           <div className="mb-8"> 
           <img
-            src="/photo.jpg" 
+            src="/Me/photo.jpg" 
             alt="Mritunjay Pandey"
             className="w-40 h-40 rounded-full object-cover mx-auto shadow-lg border-4 border-primary/50 hover:scale-105 transition-transform duration-300"
           />
