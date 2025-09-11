@@ -1,0 +1,40 @@
+# .github/workflows/deploy.yml
+
+name: Build and Deploy to GitHub Pages
+
+on:
+  # This workflow runs automatically on any push to the main branch
+  push:
+    branches: [main]
+  # This allows you to run it manually from the "Actions" tab on GitHub
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    # This job runs on a virtual machine provided by GitHub
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checks out your repository's code so the workflow can access it
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      # Step 2: Sets up the correct version of Node.js
+      - name: Set up Node.js 🔧
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # Step 3: Installs all the project dependencies from package.json
+      - name: Install dependencies 📦
+        run: npm install
+
+      # Step 4: Runs the build script (vite build) to create the final website files
+      - name: Build project 🏗️
+        run: npm run build
+
+      # Step 5: Deploys the built website (from the 'dist' folder) to a special 'gh-pages' branch
+      - name: Deploy to gh-pages branch 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
