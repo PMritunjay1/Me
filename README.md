@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+# Mritunjay's Portfolio Glow ✨
 
-## Project info
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Tech Stack](https://img.shields.io/badge/Tech-React%20%7C%20Vite%20%7C%20Tailwind-blueviolet)
 
-**URL**: https://lovable.dev/projects/58708cfe-2207-4130-a927-3a88a4551e9f
+Welcome! This repository contains the code for my personal portfolio website. The site is a living showcase of my journey as a software developer, detailing my projects, skills, and experience.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+### **[🚀 View the Live Site](https://pmritunjay1.github.io/Me/)**
 
-**Use Lovable**
+## ## 🚀 A Tour of the Portfolio
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/58708cfe-2207-4130-a927-3a88a4551e9f) and start prompting.
+This portfolio is designed as a single-page experience, guiding you through my profile in a logical flow.
 
-Changes made via Lovable will be committed automatically to this repo.
+### **1. Hero Section**
+The first thing you'll see is a dynamic hero section with an animated background and a typing effect that introduces my role as a Full Stack Developer and Problem Solver. It features my profile picture, a brief bio, and quick-access buttons to view my work or get in touch.
 
-**Use your preferred IDE**
+### **2. Experience & Leadership**
+This section presents my professional and academic journey in a clean, chronological format. Each interactive card details my responsibilities and achievements in roles such as my SWE internship at AlgoUniversity, my teaching assistant positions, and other leadership experiences at IIIT Bhopal.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### **3. Projects Showcase**
+Here, you can explore a curated selection of my projects. Each project has its own card with:
+-   A detailed description of its purpose and features.
+-   The key technologies I used to build it.
+-   Direct links to view the **live website** and its **source code** on GitHub.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### **4. Skills Overview**
+This is a comprehensive overview of my technical toolkit. The skills are organized into categories like **Languages**, **Frontend**, **Backend**, and **Tools** for a quick and easy-to-read summary of my capabilities.
 
-Follow these steps:
+### **5. Contact Section**
+Want to get in touch? This final section includes a contact form for inquiries and direct icon links to my GitHub, LinkedIn, and email for easy access.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## ## 🛠️ Built With
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+This project was brought to life using a modern and robust set of technologies:
 
-# Step 3: Install the necessary dependencies.
-npm i
+-   **Frontend:** React, TypeScript
+-   **Build Tool:** Vite
+-   **Styling:** Tailwind CSS
+-   **UI Components:** Shadcn UI
+-   **Icons:** Lucide React
+-   **Deployment:** GitHub Pages via GitHub Actions
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+### **Connect with me:**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/58708cfe-2207-4130-a927-3a88a4551e9f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/pmritunjay)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PMritunjay1)
