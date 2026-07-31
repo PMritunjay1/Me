@@ -5,60 +5,97 @@ import { Button } from '@/components/ui/button';
 const Projects = () => {
   const projects = [
     {
-      title: "Parkify: Automated Parking System",
-      description: "Full-stack Parking Management System built with Python, FastAPI, SQLAlchemy, and JS for 200+ spots, reducing manual work by 40%.",
+      title: "HealthInsight: Multi-Agent Clinical Diagnostic System",
+      description: "Advanced multi-agent clinical decision support system designed to eliminate hallucination errors. Routes symptoms to specialized AI agents and calibrates confidence using a Response Agreement & Calibration (RAC) module.",
       features: [
-        "QR-based digital ticketing system",
-        "Real-time admin dashboard with 4+ user roles",
-        "Reports module with weekly revenue/occupancy PDFs",
-        "Fast ticket search and lost-ticket assistance"
+        "RIE Module: Parses free-text symptoms into structured clinical entities",
+        "Parallel Specialist Agents: cardiology, neurology, etc. evaluate independently",
+        "RAC Safety Module: Calibrates confidence, reducing expected calibration error (ECE < 0.10)",
+        "Consensus Engine: Deterministic, domain-weighted argmax consensus"
       ],
-      technologies: ["Python", "FastAPI", "SQLAlchemy", "JavaScript", "QR Code"],
+      technologies: ["React", "TypeScript", "Python", "Tailwind CSS", "Vite", "OpenAI API", "RAC"],
+      githubUrl: "https://github.com/PMritunjay1/Multi-agent-Diagnostic-System",
+      metrics: ["88% Diagnostic Accuracy", "45% severe error reduction", "ECE < 0.10 safety bound"]
+    },
+    {
+      title: "HOS Route Master & ELD Log Generator",
+      description: "A compliant full-stack web application for commercial truck drivers that calculates FMCSA Hours of Service (HOS) compliant routes and generates 24-hour Electronic Logging Device (ELD) daily log sheets.",
+      features: [
+        "HOS Simulation Engine: Enforces 11h driving, 14h window, 8h break, and 70h/8-day rules",
+        "Automated Delays: Pre/post-trip inspections, loading (1h), and fueling delays",
+        "ELD Log Generation: Programmatically generates interactive, printable log sheets",
+        "Dockerized: Multi-stage Docker files for streamlined local/production deploy"
+      ],
+      technologies: ["Django", "React", "Tailwind CSS", "Leaflet.js", "Docker", "Gunicorn", "WhiteNoise"],
+      githubUrl: "https://github.com/PMritunjay1/hos-route-master-fullstack",
+      metrics: ["FMCSA HOS compliant", "15-minute interval logging", "Leaflet Route Mapping"]
+    },
+    {
+      title: "Fuel-Optimal Route Planner & Cost Calculator",
+      description: "A production-ready Django REST API application that calculates the most fuel-optimal, cost-effective route between any two locations across the United States.",
+      features: [
+        "3D Cartesian cKDTree: Spatial indexing bypasses latitude distortion to search within 15 miles in <1.5ms",
+        "Route Densification: Prevents missing fuel stations on sparse highway segments",
+        "In-Memory Caching: Shared Django LocMemCache loads completed routes in under 15ms",
+        "Connection Pooling: Requests session pooling eliminates TCP/SSL handshake latency"
+      ],
+      technologies: ["Django", "Python", "Pandas", "SciPy (cKDTree)", "OSRM", "Leaflet.js"],
+      githubUrl: "https://github.com/PMritunjay1/fuel-route-planner",
+      metrics: ["<1.5ms spatial search", "97.6% offline city matching", "<15ms cached page load"]
+    },
+    {
+      title: "Healthcare Agent Framework: Multi-Agent RAG System",
+      description: "An AI-powered administrative healthcare automation framework featuring a multi-agent LangChain orchestrator with conversational appointment booking, clinical Q&A, and EMR data automation.",
+      features: [
+        "Orchestration: LangChain multi-agent router delegating to specialized agents",
+        "RAG Q&A: FAISS vector search over MedQA dataset via Hugging Face embeddings",
+        "EMR Web Automation: Selenium-based agent for automated record entries",
+        "Pluggable Backend: Swaps local Ollama (Llama 3) with OpenAI GPT-4o mini API"
+      ],
+      technologies: ["Python", "LangChain", "Streamlit", "FAISS", "SQLite", "Selenium", "Ollama"],
+      githubUrl: "https://github.com/PMritunjay1/healthcare-agent-framework",
+      metrics: ["100% local privacy option", "Conversational booking", "Automated EMR entry"]
+    },
+    {
+      title: "Parkify: Automated Parking System",
+      description: "Full-stack automated parking management system featuring QR-based digital ticketing, live admin dashboard, automated fee calculation, and monthly reports.",
+      features: [
+        "QR-based digital ticketing system and payment calculation",
+        "Real-time admin dashboard supporting 4+ user roles",
+        "Automated reports module for weekly revenue/occupancy PDFs",
+        "End-to-end functional test cases validating ticketing workflow"
+      ],
+      technologies: ["Python", "FastAPI", "SQLAlchemy", "React", "PostgreSQL", "JWT"],
       liveUrl: "https://parkify-iiit.netlify.app/",
       githubUrl: "https://github.com/PMritunjay1/Parking-system",
-      metrics: ["200+ parking spots", "40% less manual work", "50% faster resolution"]
+      metrics: ["40% less manual admin work", "50% faster issue resolution", "200+ parking spots managed"]
     },
-    
+    {
+      title: "Current Leakage Detector",
+      description: "Low-cost real-time current leakage monitoring system with 95% fault detection accuracy and instant notifications.",
+      features: [
+        "Real-time monitoring with 95% fault detection accuracy",
+        "Instant alerts for >10 Ohms deviations",
+        "24/7 facility tracking dashboard with <5 minutes detection downtime",
+        "80% reduction in manual equipment checking work"
+      ],
+      technologies: ["IoT Sensors", "Python", "Alert System", "Dashboard", "C++"],
+      githubUrl: "https://github.com/PMritunjay1/current-leakage",
+      metrics: ["95% fault detection accuracy", "Downtime detection <5 mins", "80% less manual checks"]
+    },
     {
       title: "College Resource Site (IIIT-B)",
       description: "Centralized hub for 100+ students to share study materials and discussions with privacy-first design.",
       features: [
         "Secure API-based contact sharing",
-        "Location coordination feature",
-        "Lightweight moderator dashboard",
-        "User interaction analytics"
+        "Location coordination and interactive maps",
+        "Lightweight moderator dashboard with interaction analytics",
+        "Node/Express backend with MongoDB storage"
       ],
       technologies: ["Node.js", "Express", "MongoDB", "React", "JWT"],
       liveUrl: "https://iiit-b.onrender.com/",
       githubUrl: "https://github.com/PMritunjay1/iiit-b",
       metrics: ["100+ active students", "40% less manual sharing", "Privacy-first approach"]
-    },
-    {
-      title: "Personal Portfolio Website",
-      description: "Modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS featuring smooth animations and SEO optimization.",
-      features: [
-        "Responsive design with modern UI/UX",
-        "Smooth animations and interactive elements",
-        "SEO optimized with meta tags and semantic HTML",
-        "Fast loading with optimized assets"
-      ],
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "Lucide Icons"],
-      liveUrl: "https://pmritunjay1.github.io/Me/",
-      githubUrl: "https://github.com/PMritunjay1/Me",
-      metrics: ["100% responsive", "Fast loading", "SEO optimized"]
-    },
-    {
-      title: "Current Leakage Detector", 
-      description: "Low-cost real-time current leakage monitoring system with 95% fault detection accuracy and instant alerts.",
-      features: [
-        "Real-time monitoring with 95% accuracy",
-        "Instant alerts for >10 Ohms deviations",
-        "24/7 facility tracking dashboard",
-        "Reduces downtime detection to <5 minutes"
-      ],
-      technologies: ["IoT Sensors", "Python", "Dashboard", "Alert System"],
-      githubUrl: "https://github.com/PMritunjay1/current-leakage",
-      metrics: ["95% accuracy", "80% less manual checks", "<5 min detection"]
     }
   ];
 

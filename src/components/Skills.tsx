@@ -4,29 +4,34 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
-      skills: ["Python", "JavaScript", "TypeScript", "C++", "SQL"],
+      skills: ["C++", "Python", "JavaScript", "C", "SQL"],
       icon: "💻"
     },
     {
-      title: "Frontend Development",
-      skills: ["React", "Next.js", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"],
-      icon: "🎨"
-    },
-    {
       title: "Backend Development",
-      skills: ["FastAPI", "SQLAlchemy", "MongoDB", "PostgreSQL"],
+      skills: ["FastAPI", "Django & DRF", "SQLAlchemy", "JWT Auth", "PostgreSQL", "SQLite"],
       icon: "⚙️"
     },
     {
+      title: "Frontend Development",
+      skills: ["React", "HTML/CSS", "Tailwind CSS", "Bootstrap"],
+      icon: "🎨"
+    },
+    {
+      title: "AI / ML Orchestration",
+      skills: ["LangChain", "RAG & FAISS", "Hugging Face", "Ollama / LLMs"],
+      icon: "🤖"
+    },
+    {
       title: "Tools & Technologies",
-      skills: ["Git", "VS Code"],
+      skills: ["Git / GitHub", "Docker", "Selenium", "Postman", "Figma"],
       icon: "🛠️"
     }
   ];
 
   return (
     <section id="skills" className="py-20 px-4 bg-muted/30">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 hero-text-gradient">
             Skills & Technologies
@@ -36,7 +41,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {skillCategories.map((category, index) => (
             <Card 
               key={category.title} 

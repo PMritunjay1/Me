@@ -1,25 +1,34 @@
-import { Briefcase, Users, BookOpen, Calendar, ExternalLink } from 'lucide-react';
+import { Briefcase, Users, BookOpen, Calendar, ExternalLink, Award } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Experience = () => {
   const experiences = [
     {
+      title: "Technical Secretary (Student Council)",
+      organization: "IIIT Bhopal",
+      department: "Student Council",
+      duration: "Sep 2025 - Present",
+      description: "Elected as Technical Secretary of the Student Council. Coordinating all technical activities, managing student tech clubs, and overseeing the planning and execution of institute-level hackathons and technical festivals.",
+      icon: Award,
+      current: true
+    },
+    {
       title: "SWE Co-Op Intern",
       organization: "AlgoUniversity",
       department: "Tech Fellowship Program",
-      duration: "1st May 2025 - 31st Jul 2025",
-      description: "Selected as SWE Co-Op Intern in the prestigious AlgoUniversity Tech Fellowship program, working on real-world software engineering projects and gaining industry experience.",
+      duration: "May 2025 - Jul 2025",
+      description: "Increased user engagement by 30% on Parkify by shipping 5+ full-stack features using React, Python, FastAPI, and SQLAlchemy (PostgreSQL). Collaborated with senior engineers to debug and refactor scalable API-based backend modules, reducing system downtime by 25%. Cut production bugs by 40% by designing and implementing automated test suites (unit + integration) achieving 95% API test coverage.",
       icon: Briefcase,
       certificate: "/Me/certicate.jpg"
     },
     {
       title: "Class Representative",
       organization: "IIIT Bhopal",
-      department: "CSE Section-2, 3rd Semester",
-      duration: "Aug 2024 - Present",
+      department: "CSE Section-2, 3rd, 4th, 5th Semester",
+      duration: "Aug 2024 - Nov 2025",
       description: "Leading and representing the interests of CSE Section-2 students, facilitating communication between students and faculty.",
       icon: Users,
-      current: true
+      current: false
     },
     {
       title: "Teaching Assistant - Discrete Structures",

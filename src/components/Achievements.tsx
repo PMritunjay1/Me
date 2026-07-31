@@ -64,8 +64,8 @@ const Achievements = () => {
   const organizationAchievements = [
     {
       title: "Technical Event Organization",
-      description: "Organized 5+ tech events engaging 300+ students on campus",
-      metric: "300+ Students",
+      description: "Organized 10+ tech events engaging 700+ students on campus",
+      metric: "700+ Students",
       icon: Users
     },
     {
@@ -190,11 +190,11 @@ const Achievements = () => {
                   <div className="text-sm text-muted-foreground">Certifications</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold hero-text-gradient">300+</div>
+                  <div className="text-3xl font-bold hero-text-gradient">700+</div>
                   <div className="text-sm text-muted-foreground">Students Engaged</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold hero-text-gradient">5+</div>
+                  <div className="text-3xl font-bold hero-text-gradient">10+</div>
                   <div className="text-sm text-muted-foreground">Events Organized</div>
                 </div>
               </div>
