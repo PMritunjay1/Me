@@ -19,7 +19,7 @@ const Experience = () => {
       duration: "May 2025 - Jul 2025",
       description: "Increased user engagement by 30% on Parkify by shipping 5+ full-stack features using React, Python, FastAPI, and SQLAlchemy (PostgreSQL). Collaborated with senior engineers to debug and refactor scalable API-based backend modules, reducing system downtime by 25%. Cut production bugs by 40% by designing and implementing automated test suites (unit + integration) achieving 95% API test coverage.",
       icon: Briefcase,
-      certificate: "/Me/certicate.jpg"
+      certificate: `${import.meta.env.BASE_URL}certicate.jpg`
     },
     {
       title: "Class Representative",
